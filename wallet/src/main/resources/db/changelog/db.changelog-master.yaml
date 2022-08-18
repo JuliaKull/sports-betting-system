@@ -1,5 +1,5 @@
 databaseChangeLog:
   - include:
-      file: "empty-changeset.sql"
+      file: "create-tables-user-and-operation.sql"
       relativeToChangelogFile: true
 

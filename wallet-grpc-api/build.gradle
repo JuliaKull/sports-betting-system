@@ -8,6 +8,8 @@ dependencies {
     api "io.grpc:grpc-stub"
     api "io.grpc:grpc-protobuf"
     implementation "com.google.protobuf:protobuf-java:${protobufVersion}"
+    implementation 'io.springfox:springfox-swagger2:3.0.0'
+    implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
 }
 
 protobuf {
