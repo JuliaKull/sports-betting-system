@@ -1,5 +1,5 @@
 databaseChangeLog:
   - include:
-      file: "create-tables-user-and-operation.sql"
+      file: "002-insert-into-table-user.sql"
       relativeToChangelogFile: true
 

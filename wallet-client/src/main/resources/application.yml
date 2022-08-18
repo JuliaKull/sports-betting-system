@@ -1,0 +1,5 @@
+grpc:
+  client:
+    grpc-wallet-service:
+      address: static://localhost:9091
+      negotiation-type: plaintext

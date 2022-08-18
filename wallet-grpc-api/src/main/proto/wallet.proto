@@ -6,9 +6,9 @@ option java_multiple_files = true;
 package com.betpawa.wallet.api.proto;
 
 service WalletGrpcService {
-  rpc reserveMoney(MoneyTransferRequest) returns (MoneyTransferResponse){}
-  rpc addMoney(MoneyTransferRequest) returns (MoneyTransferResponse){}
-  rpc balance(AccountDetailsRequest) returns (BalanceResponse){}
+  rpc reserveMoney(MoneyTransferRequest) returns (stream MoneyTransferResponse){}
+  rpc addMoney(MoneyTransferRequest) returns (stream MoneyTransferResponse){}
+  rpc balance(AccountDetailsRequest) returns (stream BalanceResponse){}
 }
 
 message AccountDetailsRequest {
