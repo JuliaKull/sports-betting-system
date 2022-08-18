@@ -4,6 +4,7 @@ apply plugin: 'java-library'
 dependencies {
     implementation(project(":wallet-grpc-api"))
     implementation(project(":wallet-client"))
+    implementation(project(":betting"))
     implementation("net.devh:grpc-server-spring-boot-starter:${devh_version}")
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
