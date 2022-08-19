@@ -1,7 +1,6 @@
 package com.betpawa.betting.controller;
 
-import com.betpawa.betting.model.Bet;
-import com.betpawa.betting.model.Game;
+import com.betpawa.betting.entity.Game;
 import com.betpawa.betting.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

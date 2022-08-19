@@ -1,6 +1,6 @@
 package com.betpawa.betting.controller;
 
-import com.betpawa.betting.model.Bet;
+import com.betpawa.betting.entity.Bet;
 import com.betpawa.betting.service.impl.BettingServiceImpl;
 import com.google.protobuf.Descriptors;
 import lombok.AllArgsConstructor;

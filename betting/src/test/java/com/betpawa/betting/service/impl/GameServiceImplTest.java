@@ -1,7 +1,6 @@
 package com.betpawa.betting.service.impl;
 
-import com.betpawa.betting.model.Bet;
-import com.betpawa.betting.model.Game;
+import com.betpawa.betting.entity.Game;
 import com.betpawa.betting.repository.GameRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

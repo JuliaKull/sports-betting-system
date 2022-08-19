@@ -1,6 +1,6 @@
 package com.betpawa.betting.service;
 
-import com.betpawa.betting.model.Bet;
+import com.betpawa.betting.entity.Bet;
 import com.google.protobuf.Descriptors;
 
 import java.math.BigDecimal;

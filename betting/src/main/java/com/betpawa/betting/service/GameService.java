@@ -1,7 +1,6 @@
 package com.betpawa.betting.service;
 
-import com.betpawa.betting.model.Bet;
-import com.betpawa.betting.model.Game;
+import com.betpawa.betting.entity.Game;
 
 import java.util.List;
 

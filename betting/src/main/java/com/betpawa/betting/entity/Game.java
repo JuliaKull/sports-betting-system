@@ -1,4 +1,4 @@
-package com.betpawa.betting.model;
+package com.betpawa.betting.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

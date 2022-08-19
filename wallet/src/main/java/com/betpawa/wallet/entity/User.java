@@ -1,4 +1,4 @@
-package com.betpawa.wallet.dto;
+package com.betpawa.wallet.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,5 +23,7 @@ public class User {
     private String email;
 
     private String password;
+
+    private BigDecimal balance;
 
 }

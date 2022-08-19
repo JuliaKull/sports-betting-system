@@ -43,12 +43,14 @@ public class WalletController {
 
     @PostMapping("account")
     public BalanceResponse create(NewAccountRequest request) {
-        throw new IllegalStateException("Not implemented");
+        final Balance customer = service.createNewAccount(request.getEmail(),request.getPassword());
+        return new BalanceResponse(customer.accountId(), customer.amount());
     }
 
     @PostMapping("find-account")
     public BalanceResponse findAccount(LoginAccountRequest request) {
-        throw new IllegalStateException("Not implemented");
+        final Balance customer = service.findAccount(request.getEmail());
+        return new BalanceResponse(customer.accountId(),customer.amount());
     }
 
     @GetMapping("balance/{account}")
@@ -56,11 +58,10 @@ public class WalletController {
         final Balance balance = service.balance(account);
         return new BalanceResponse(balance.accountId(), balance.amount());
     }
-
     @GetMapping("operations/{account}")
     public OperationsResponse listOperations(@PathVariable("account") Long account, @RequestParam(value = "take", defaultValue = "20") int take,
                                              @RequestParam(value = "skip", defaultValue = "0") int skip) {
-        throw new IllegalStateException("Not implemented");
+        return service.listOperations(account);
     }
 
 }

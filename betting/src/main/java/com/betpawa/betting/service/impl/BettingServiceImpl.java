@@ -1,6 +1,6 @@
 package com.betpawa.betting.service.impl;
 
-import com.betpawa.betting.model.Bet;
+import com.betpawa.betting.entity.Bet;
 import com.betpawa.betting.repository.BetRepository;
 import com.betpawa.betting.service.BettingService;
 import com.betpawa.wallet.api.proto.AccountDetailsRequest;

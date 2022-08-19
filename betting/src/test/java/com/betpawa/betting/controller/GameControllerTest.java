@@ -1,8 +1,6 @@
 package com.betpawa.betting.controller;
 
-import com.betpawa.betting.model.Bet;
-import com.betpawa.betting.model.Game;
-import com.betpawa.betting.service.impl.BettingServiceImpl;
+import com.betpawa.betting.entity.Game;
 import com.betpawa.betting.service.impl.GameServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
