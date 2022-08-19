@@ -4,5 +4,3 @@ grpc:
       address: static://localhost:9091
       negotiation-type: plaintext
 
-server:
-  port: 8083
