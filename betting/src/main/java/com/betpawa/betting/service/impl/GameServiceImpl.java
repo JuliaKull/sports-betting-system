@@ -19,7 +19,7 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
-    public Game findBetById(Long id) {
+    public Game findGameById(Long id) {
         return gameRepository.findById(id).get();
     }
 }

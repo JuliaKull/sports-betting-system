@@ -1,5 +1,6 @@
 package com.betpawa.betting.controller;
 
+import com.betpawa.betting.model.Bet;
 import com.betpawa.betting.service.impl.BettingServiceImpl;
 import com.google.protobuf.Descriptors;
 import lombok.AllArgsConstructor;
@@ -23,5 +24,16 @@ public class BettingController {
     public List<Map<Descriptors.FieldDescriptor,Object>> balance (@PathVariable("account") Long account) throws InterruptedException {
        return service.balance(account);
 }
+
+    @GetMapping("/all")
+    public List<Bet> all(){
+        return service.getAll();
+    }
+
+    @GetMapping("/{account}")
+    public Bet findById (@PathVariable("account") Long account){
+        return service.findBetById(account);
+    }
+
 
 }

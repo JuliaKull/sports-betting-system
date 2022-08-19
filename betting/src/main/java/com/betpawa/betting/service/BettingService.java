@@ -13,10 +13,9 @@ public interface BettingService {
 
     List<Bet> getAll();
 
-Bet findBetById(Long id);
+    Bet findBetById(Long id);
 
-void acceptBet(Long id, BigDecimal bet) ;
-
+    void acceptBet(Long id, BigDecimal bet) ;
 
 
 }

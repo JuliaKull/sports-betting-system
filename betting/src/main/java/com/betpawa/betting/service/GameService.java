@@ -8,5 +8,5 @@ import java.util.List;
 public interface GameService {
     List<Game> getAll();
 
-    Game findBetById(Long id);
+    Game findGameById(Long id);
 }
