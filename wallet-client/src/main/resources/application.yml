@@ -3,3 +3,6 @@ grpc:
     grpc-wallet-service:
       address: static://localhost:9091
       negotiation-type: plaintext
+
+server:
+  port: 8083
